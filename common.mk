@@ -41,6 +41,9 @@ endif
 common_deps  :=
 kernel_includes :=
 
+# FOR OnePlus One BUILD SETCONFIG
+common_flags += -DSK_SUPPORT_LEGACY_COMPUTE_CONFIG_SIZE -DSK_SUPPORT_LEGACY_BITMAP_CONFIG -DSK_SUPPORT_LEGACY_SETCONFIG -DSK_SUPPORT_LEGACY_SETCONFIG_INFO
+
 # Executed only on QCOM BSPs
 ifeq ($(TARGET_USES_QCOM_BSP),true)
 # Enable QCOM Display features

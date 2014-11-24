@@ -58,6 +58,7 @@ extern "C" {
 
 EGLAPI EGLBoolean eglGpuPerfHintQCOM(EGLDisplay dpy, EGLContext ctx,
                                            EGLint *attrib_list);
+
 #define EGL_GPU_HINT_1        0x32D0
 #define EGL_GPU_HINT_2        0x32D1
 
